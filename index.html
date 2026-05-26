@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prénom Nom — Embedded Software Engineer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-ring" id="cursorRing"></div>
+    <div class="glow-orb orb1"></div>
+    <div class="glow-orb orb2"></div>
+
+    <nav>
+      <div class="nav-inner">
+        <div class="nav-logo">~/portfolio<span>.sh</span></div>
+        <ul class="nav-links">
+          <li><a href="#about">about</a></li>
+          <li><a href="#skills">skills</a></li>
+          <li><a href="#experience">experience</a></li>
+          <li><a href="#contact">contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container">
+      <!-- HERO -->
+      <section class="hero" id="about">
+        <p class="hero-prompt fade-up">whoami</p>
+        <h1 class="hero-name fade-up delay-1">
+          Prénom<br /><span class="accent">Nom.</span>
+        </h1>
+        <p class="hero-title fade-up delay-2">Embedded Software Engineer</p>
+
+        <div class="status-badge fade-up delay-3">
+          <span class="dot"></span>
+          Available · Sept 2026 · London / Cambridge / Côte d'Azur
+        </div>
+
+        <p class="hero-bio fade-up delay-3">
+          <span class="hi">Hybrid engineer</span> navigating the full stack —
+          from <span class="kw">data-driven algorithms</span> down to
+          <span class="val">the silicon they execute on</span>. Master MIAGE
+          IA² at Université Côte d'Azur, 3 years of C++ production experience,
+          and hands-on embedded prototyping on ESP32, STM32 &amp; Raspberry Pi.
+        </p>
+
+        <!-- CTA BUTTONS -->
+        <div class="cta-grid fade-up delay-4">
+          <a href="cv-fr.pdf" download class="cta-btn btn-cvfr">
+            <div class="cta-btn-icon">
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4" />
+                <polyline points="7 10 12 15 17 10" />
+                <line x1="12" y1="15" x2="12" y2="3" />
+              </svg>
+            </div>
+            <div class="cta-text">
+              <span class="cta-label">télécharger</span>
+              <span class="cta-name">CV · Français</span>
+            </div>
+          </a>
+          <a href="cv-en.pdf" download class="cta-btn btn-cven">
+            <div class="cta-btn-icon">
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4" />
+                <polyline points="7 10 12 15 17 10" />
+                <line x1="12" y1="15" x2="12" y2="3" />
+              </svg>
+            </div>
+            <div class="cta-text">
+              <span class="cta-label">download</span>
+              <span class="cta-name">CV · English</span>
+            </div>
+          </a>
+          <a
+            href="https://linkedin.com/in/VOTRE-PROFIL"
+            target="_blank"
+            rel="noopener"
+            class="cta-btn btn-linkedin"
+            style="grid-column: 1 / -1; max-width: 256px"
+          >
+            <div class="cta-btn-icon">
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"
+                />
+                <circle cx="4" cy="4" r="2" />
+              </svg>
+            </div>
+            <div class="cta-text">
+              <span class="cta-label">connect</span>
+              <span class="cta-name">LinkedIn</span>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <!-- SKILLS -->
+      <section id="skills">
+        <div class="section-header">
+          <span class="section-kw">const</span>
+          <h2 class="section-title">skills</h2>
+          <div class="section-line"></div>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-group">
+            <div class="skill-group-name">languages</div>
+            <div class="skill-tags">
+              <span class="tag tag-green">C++</span>
+              <span class="tag tag-green">C</span>
+              <span class="tag tag-green">Python</span>
+              <span class="tag tag-blue">ARM Assembly</span>
+              <span class="tag tag-purple">Java</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <div class="skill-group-name">embedded / hardware</div>
+            <div class="skill-tags">
+              <span class="tag tag-yellow">ESP32</span>
+              <span class="tag tag-yellow">STM32</span>
+              <span class="tag tag-yellow">Raspberry Pi</span>
+              <span class="tag tag-yellow">Arduino</span>
+              <span class="tag tag-yellow">ESP-IDF</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <div class="skill-group-name">concepts</div>
+            <div class="skill-tags">
+              <span class="tag tag-blue">Real-time</span>
+              <span class="tag tag-blue">FFT / DSP</span>
+              <span class="tag tag-blue">Memory mgmt</span>
+              <span class="tag tag-blue">RTOS</span>
+              <span class="tag tag-blue">Computer Vision</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <div class="skill-group-name">software</div>
+            <div class="skill-tags">
+              <span class="tag tag-purple">C++ Backend</span>
+              <span class="tag tag-purple">OpenCV</span>
+              <span class="tag tag-purple">Angular</span>
+              <span class="tag tag-purple">Git</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- EXPERIENCE -->
+      <section id="experience">
+        <div class="section-header">
+          <span class="section-kw">export</span>
+          <h2 class="section-title">experience</h2>
+          <div class="section-line"></div>
+        </div>
+        <div class="timeline">
+          <div class="xp-card">
+            <div class="xp-header">
+              <span class="xp-title">Master MIAGE IA²</span>
+              <span class="xp-period">2023 — 2026</span>
+            </div>
+            <div class="xp-org">Université Côte d'Azur — Nice, France</div>
+            <div class="xp-desc">
+              AI & Software Engineering. Exchange semester at Université Laval
+              (Québec) — Mobile Robotics, Software Architecture, Computer
+              Vision.
+            </div>
+            <div class="xp-chips">
+              <span class="xp-chip">AI</span>
+              <span class="xp-chip">Robotics</span>
+              <span class="xp-chip">Computer Vision</span>
+              <span class="xp-chip">Software Architecture</span>
+            </div>
+          </div>
+
+          <div class="xp-card">
+            <div class="xp-header">
+              <span class="xp-title">C++ Backend Engineer — Apprenticeship</span>
+              <span class="xp-period">2022 — 2024</span>
+            </div>
+            <div class="xp-org">Entreprise · Sophia Antipolis</div>
+            <div class="xp-desc">
+              2 years of production C++ development. Memory-efficient code,
+              performance bottleneck identification, production-grade systems.
+            </div>
+            <div class="xp-chips">
+              <span class="xp-chip">C++</span>
+              <span class="xp-chip">Performance</span>
+              <span class="xp-chip">Memory</span>
+              <span class="xp-chip">Production</span>
+            </div>
+          </div>
+
+          <div class="xp-card">
+            <div class="xp-header">
+              <span class="xp-title">ESP32 Audio Sync — Real-time DSP</span>
+              <span class="xp-period">Projet perso</span>
+            </div>
+            <div class="xp-org">Hardware · ESP-IDF · C</div>
+            <div class="xp-desc">
+              LED strip synchronized to audio via FFT on bare ESP32. Deep dive
+              into hardware datasheets, resource optimization to achieve minimal
+              latency.
+            </div>
+            <div class="xp-chips">
+              <span class="xp-chip">C</span>
+              <span class="xp-chip">ESP-IDF</span>
+              <span class="xp-chip">FFT</span>
+              <span class="xp-chip">Real-time</span>
+              <span class="xp-chip">Low-latency</span>
+            </div>
+          </div>
+
+          <div class="xp-card">
+            <div class="xp-header">
+              <span class="xp-title">Raspberry Pi Smart Dashcam</span>
+              <span class="xp-period">Projet perso</span>
+            </div>
+            <div class="xp-org">Hardware · Python · OpenCV</div>
+            <div class="xp-desc">
+              Intelligent dashcam with object tracking and OCR. Real-time
+              computer vision pipeline on embedded Linux.
+            </div>
+            <div class="xp-chips">
+              <span class="xp-chip">Python</span>
+              <span class="xp-chip">OpenCV</span>
+              <span class="xp-chip">OCR</span>
+              <span class="xp-chip">Tracking</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT TEXT -->
+      <section>
+        <div class="section-header">
+          <span class="section-kw">README</span>
+          <h2 class="section-title">.md</h2>
+          <div class="section-line"></div>
+        </div>
+        <div class="about-block">
+          <p class="about-text">
+            My journey started with a <span class="em">STI2D high school diploma</span>,
+            then a DUT in Data Science — where I built solid foundations in
+            statistics, logic, and data processing. I overcame significant early
+            gaps in mathematics to reach a
+            <span class="em2">Master's level in AI</span>, which speaks more to
+            <span class="em">perseverance and a growth mindset</span> than any
+            diploma.<br /><br />
+            Three years of apprenticeship taught me how to write code that
+            <span class="em3">doesn't just work — it runs fast and doesn't leak</span>.
+            A semester in Québec doing mobile robotics was the turning point:
+            software meeting physical hardware for the first time.<br /><br />
+            Since then, I've been prototyping on my own time — FFT on an ESP32,
+            computer vision on a Pi — because
+            <span class="em">embedded systems aren't just a career target, they're what I actually enjoy building</span>.
+          </p>
+          <div class="about-loc">
+            <div class="loc-item">
+              <span class="loc-dot"></span> Sophia Antipolis, FR
+            </div>
+            <div class="loc-item">
+              <span
+                class="loc-dot"
+                style="background: var(--blue); box-shadow: 0 0 6px var(--blue)"
+              ></span>
+              London / Cambridge · target
+            </div>
+            <div class="loc-item">
+              <span
+                class="loc-dot"
+                style="background: var(--purple); box-shadow: 0 0 6px var(--purple)"
+              ></span>
+              Available Sept 2026
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- FOOTER -->
+    <footer id="contact">
+      <div class="container">
+        <p class="contact-line">
+          <span class="green">$</span> echo "Let's build something close to the
+          metal."
+        </p>
+        <p style="margin-bottom: 16px; font-size: 12px">
+          <a
+            href="https://linkedin.com/in/VOTRE-PROFIL"
+            target="_blank"
+            rel="noopener"
+            style="
+              color: var(--blue);
+              text-decoration: none;
+              border-bottom: 1px solid rgba(88, 166, 255, 0.3);
+              padding-bottom: 1px;
+              transition: color 0.2s;
+            "
+          >
+            linkedin.com/in/VOTRE-PROFIL
+          </a>
+        </p>
+        <p>crafted with <span class="green">{'<3'}</span> — 2026</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
