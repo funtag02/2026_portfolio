@@ -23,9 +23,16 @@
         <ul class="nav-links">
           <li><a href="#about">about</a></li>
           <li><a href="#skills">skills</a></li>
+          <li><a href="#projects">projects</a></li>
           <li><a href="#experience">experience</a></li>
+          <li><a href="#education">education</a></li>
           <li><a href="#contact">contact</a></li>
         </ul>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
       </div>
     </nav>
 
@@ -55,16 +62,7 @@
         <div class="cta-grid fade-up delay-4">
           <a href="cv-fr.pdf" download class="cta-btn btn-cvfr">
             <div class="cta-btn-icon">
-              <svg
-                width="18"
-                height="18"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4" />
                 <polyline points="7 10 12 15 17 10" />
                 <line x1="12" y1="15" x2="12" y2="3" />
@@ -77,16 +75,7 @@
           </a>
           <a href="cv-en.pdf" download class="cta-btn btn-cven">
             <div class="cta-btn-icon">
-              <svg
-                width="18"
-                height="18"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4" />
                 <polyline points="7 10 12 15 17 10" />
                 <line x1="12" y1="15" x2="12" y2="3" />
@@ -105,15 +94,8 @@
             style="grid-column: 1 / -1; max-width: 256px"
           >
             <div class="cta-btn-icon">
-              <svg
-                width="18"
-                height="18"
-                viewBox="0 0 24 24"
-                fill="currentColor"
-              >
-                <path
-                  d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"
-                />
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z" />
                 <circle cx="4" cy="4" r="2" />
               </svg>
             </div>
@@ -151,6 +133,7 @@
               <span class="tag tag-yellow">Raspberry Pi</span>
               <span class="tag tag-yellow">Arduino</span>
               <span class="tag tag-yellow">ESP-IDF</span>
+              <span class="tag tag-yellow">Embedded C</span>
             </div>
           </div>
           <div class="skill-group">
@@ -175,57 +158,45 @@
         </div>
       </section>
 
-      <!-- EXPERIENCE -->
-      <section id="experience">
+      <!-- PROJECTS -->
+      <section id="projects">
         <div class="section-header">
-          <span class="section-kw">export</span>
-          <h2 class="section-title">experience</h2>
+          <span class="section-kw">./run</span>
+          <h2 class="section-title">projects</h2>
           <div class="section-line"></div>
         </div>
         <div class="timeline">
-          <div class="xp-card">
-            <div class="xp-header">
-              <span class="xp-title">Master MIAGE IA²</span>
-              <span class="xp-period">2023 — 2026</span>
-            </div>
-            <div class="xp-org">Université Côte d'Azur — Nice, France</div>
-            <div class="xp-desc">
-              AI & Software Engineering. Exchange semester at Université Laval
-              (Québec) — Mobile Robotics, Software Architecture, Computer
-              Vision.
-            </div>
-            <div class="xp-chips">
-              <span class="xp-chip">AI</span>
-              <span class="xp-chip">Robotics</span>
-              <span class="xp-chip">Computer Vision</span>
-              <span class="xp-chip">Software Architecture</span>
-            </div>
-          </div>
 
           <div class="xp-card">
             <div class="xp-header">
-              <span class="xp-title">C++ Backend Engineer — Apprenticeship</span>
-              <span class="xp-period">2022 — 2024</span>
+              <span class="xp-title">TheoOS — Bare-metal mini-OS on ARM</span>
+              <span class="xp-period">Jun 2026 — ongoing</span>
             </div>
-            <div class="xp-org">Entreprise · Sophia Antipolis</div>
+            <div class="xp-org">STM32H750B-DK · C / ARM Cortex-M7</div>
             <div class="xp-desc">
-              2 years of production C++ development. Memory-efficient code,
-              performance bottleneck identification, production-grade systems.
+              Building a bare-metal OS from scratch — no HAL, no CubeMX, no RTOS library.
+              Startup code, linker scripts, custom toolchain, incrementally building toward
+              a functional kernel with multi-task scheduling. Goal: deep understanding of
+              how computers work at the lowest level, and a real runtime for future embedded
+              projects (IoT, sensors, automation).
             </div>
             <div class="xp-chips">
-              <span class="xp-chip">C++</span>
-              <span class="xp-chip">Performance</span>
-              <span class="xp-chip">Memory</span>
-              <span class="xp-chip">Production</span>
+              <span class="xp-chip">C</span>
+              <span class="xp-chip">ARM Cortex-M7</span>
+              <span class="xp-chip">STM32</span>
+              <span class="xp-chip">Bare-metal</span>
+              <span class="xp-chip">Linker scripts</span>
+              <span class="xp-chip">Kernel</span>
+              <span class="xp-chip">Scheduling</span>
             </div>
           </div>
 
           <div class="xp-card">
             <div class="xp-header">
               <span class="xp-title">ESP32 Audio Sync — Real-time DSP</span>
-              <span class="xp-period">Projet perso</span>
+              <span class="xp-period">Nov 2025 - ongoing</span>
             </div>
-            <div class="xp-org">Hardware · ESP-IDF · C</div>
+            <div class="xp-org">Embedded/Hardware · ESP-IDF · C</div>
             <div class="xp-desc">
               LED strip synchronized to audio via FFT on bare ESP32. Deep dive
               into hardware datasheets, resource optimization to achieve minimal
@@ -243,9 +214,9 @@
           <div class="xp-card">
             <div class="xp-header">
               <span class="xp-title">Raspberry Pi Smart Dashcam</span>
-              <span class="xp-period">Projet perso</span>
+              <span class="xp-period">Mar 2023 - June 2023</span>
             </div>
-            <div class="xp-org">Hardware · Python · OpenCV</div>
+            <div class="xp-org">Python · OpenCV · YOLO</div>
             <div class="xp-desc">
               Intelligent dashcam with object tracking and OCR. Real-time
               computer vision pipeline on embedded Linux.
@@ -254,9 +225,170 @@
               <span class="xp-chip">Python</span>
               <span class="xp-chip">OpenCV</span>
               <span class="xp-chip">OCR</span>
+              <span class="xp-chip">YOLO</span>
               <span class="xp-chip">Tracking</span>
             </div>
           </div>
+
+        </div>
+      </section>
+
+      <!-- EXPERIENCE -->
+      <section id="experience">
+        <div class="section-header">
+          <span class="section-kw">export</span>
+          <h2 class="section-title">experience</h2>
+          <div class="section-line"></div>
+        </div>
+        <div class="timeline">
+
+          <!-- Amadeus -->
+          <div class="xp-card">
+            <div class="xp-header">
+              <span class="xp-title">C++ Backend Engineer — Apprenticeship</span>
+              <span class="xp-period">Sep 2024 — Sep 2026</span>
+            </div>
+            <div class="xp-org">Amadeus IT Group · Sophia Antipolis</div>
+            <div class="xp-desc">
+              2 years of production C++ development. Memory-efficient code,
+              performance bottleneck identification, production-grade systems.
+            </div>
+            <div class="xp-chips">
+              <span class="xp-chip">C++</span>
+              <span class="xp-chip">Performance</span>
+              <span class="xp-chip">Memory</span>
+              <span class="xp-chip">Production</span>
+              <span class="xp-chip">Industry</span>
+            </div>
+          </div>
+
+          <!-- Infotel Software Engineer -->
+          <div class="xp-card">
+            <div class="xp-header">
+              <span class="xp-title">Software Engineer — Apprenticeship</span>
+              <span class="xp-period">Aug 2023 — Aug 2024</span>
+            </div>
+            <div class="xp-org">Infotel · Valbonne, Sophia Antipolis</div>
+            <div class="xp-desc">
+              Software design and delivery in an agile environment.
+              Contributed to production software with a focus on software
+              engineering best practices.
+            </div>
+            <div class="xp-chips">
+              <span class="xp-chip">Software Design</span>
+              <span class="xp-chip">Agile</span>
+              <span class="xp-chip">Apprenticeship</span>
+            </div>
+          </div>
+
+          <!-- Infotel Full Stack -->
+          <div class="xp-card">
+            <div class="xp-header">
+              <span class="xp-title">Full Stack Developer — Internship</span>
+              <span class="xp-period">Apr 2023 — Jul 2023</span>
+            </div>
+            <div class="xp-org">Infotel · Valbonne, Sophia Antipolis</div>
+            <div class="xp-desc">
+              Full stack development internship. Built and maintained web
+              features using Java backend and frontend frameworks in an
+              agile team.
+            </div>
+            <div class="xp-chips">
+              <span class="xp-chip">Java</span>
+              <span class="xp-chip">Full Stack</span>
+              <span class="xp-chip">Agile</span>
+            </div>
+          </div>
+
+
+        </div>
+      </section>
+
+      <!-- EDUCATION -->
+      <section id="education">
+        <div class="section-header">
+          <span class="section-kw">import</span>
+          <h2 class="section-title">education</h2>
+          <div class="section-line"></div>
+        </div>
+        <div class="timeline">
+
+          <div class="xp-card">
+            <div class="xp-header">
+              <span class="xp-title">Master MIAGE — Parcours IA²</span>
+              <span class="xp-period">Sep 2024 — Sep 2026</span>
+            </div>
+            <div class="xp-org">Université Côte d'Azur · EUR DS4H — Nice, France</div>
+            <div class="xp-desc">
+              Méthodes Informatiques Appliquées à la Gestion des Entreprises,
+              parcours Intelligence Artificielle Appliquée. AI, software engineering,
+              IoT, and applied machine learning.
+            </div>
+            <div class="xp-chips">
+              <span class="xp-chip">AI</span>
+              <span class="xp-chip">Machine Learning</span>
+              <span class="xp-chip">IoT</span>
+              <span class="xp-chip">Software Engineering</span>
+            </div>
+          </div>
+
+          <div class="xp-card">
+            <div class="xp-header">
+              <span class="xp-title">Exchange Semester — Computer Software Engineering</span>
+              <span class="xp-period">Sep 2025 — Dec 2025</span>
+            </div>
+            <div class="xp-org">Université Laval · Québec, Canada</div>
+            <div class="xp-desc">
+              Exchange semester focused on applied computer science. Courses:
+              Machine Learning for Signal Processing (IFT-7031), Natural Language
+              Processing (IFT-7022), Computer Vision (GIF-7001), Software Architecture
+              (IFT-6003), Mobile Robotics (GLO-7021).
+            </div>
+            <div class="xp-chips">
+              <span class="xp-chip">Robotics</span>
+              <span class="xp-chip">Computer Vision</span>
+              <span class="xp-chip">NLP</span>
+              <span class="xp-chip">Software Architecture</span>
+              <span class="xp-chip">Signal Processing</span>
+            </div>
+          </div>
+
+          <div class="xp-card">
+            <div class="xp-header">
+              <span class="xp-title">Licence 3 MIASHS — Parcours MIAGE</span>
+              <span class="xp-period">Aug 2023 — Aug 2024</span>
+            </div>
+            <div class="xp-org">Université Côte d'Azur — Nice, France</div>
+            <div class="xp-desc">
+              Mathématiques et Informatique Appliquées aux Sciences Humaines et
+              Sociales, parcours MIAGE. Software engineering, accounting management,
+              applied mathematics.
+            </div>
+            <div class="xp-chips">
+              <span class="xp-chip">Software Engineering</span>
+              <span class="xp-chip">Applied Mathematics</span>
+              <span class="xp-chip">Management</span>
+            </div>
+          </div>
+
+          <div class="xp-card">
+            <div class="xp-header">
+              <span class="xp-title">BUT Statistique et Informatique Décisionnelle</span>
+              <span class="xp-period">Sep 2021 — Jun 2023</span>
+            </div>
+            <div class="xp-org">IUT Nice Côte d'Azur — Data Science track</div>
+            <div class="xp-desc">
+              2-year technology degree in Data Science. Statistical analysis,
+              machine learning fundamentals, databases, and decisional computing.
+            </div>
+            <div class="xp-chips">
+              <span class="xp-chip">Data Science</span>
+              <span class="xp-chip">Statistics</span>
+              <span class="xp-chip">Machine Learning</span>
+              <span class="xp-chip">Databases</span>
+            </div>
+          </div>
+
         </div>
       </section>
 
@@ -289,60 +421,54 @@
               <span class="loc-dot"></span> Sophia Antipolis, FR
             </div>
             <div class="loc-item">
-              <span
-                class="loc-dot"
-                style="background: var(--blue); box-shadow: 0 0 6px var(--blue)"
-              ></span>
+              <span class="loc-dot" style="background: var(--blue); box-shadow: 0 0 6px var(--blue)"></span>
               London / Cambridge · target
             </div>
             <div class="loc-item">
-              <span
-                class="loc-dot"
-                style="background: var(--purple); box-shadow: 0 0 6px var(--purple)"
-              ></span>
+              <span class="loc-dot" style="background: var(--purple); box-shadow: 0 0 6px var(--purple)"></span>
               Available Sept 2026
             </div>
           </div>
         </div>
       </section>
-    <!-- CONTACT SECTION -->
-    <section id="contact-methods">
+
+      <!-- CONTACT SECTION -->
+      <section id="contact-methods">
         <div class="section-header">
-            <span class="section-kw">get in</span>
-            <h2 class="section-title">touch</h2>
-            <div class="section-line"></div>
+          <span class="section-kw">get in</span>
+          <h2 class="section-title">touch</h2>
+          <div class="section-line"></div>
         </div>
-        
         <div class="contact-grid">
-            <a href="mailto:theo.lahmar1@gmail.com" class="contact-card contact-email">
+          <a href="mailto:theo.lahmar1@gmail.com" class="contact-card contact-email">
             <div class="contact-icon">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <rect x="2" y="4" width="20" height="16" rx="2" />
                 <path d="m22 7-8.97 5.7a1.94 1.94 0 01-2.06 0L2 7" />
-                </svg>
+              </svg>
             </div>
             <div class="contact-info">
-                <div class="contact-label">Email</div>
-                <div class="contact-value">theo.lahmar1@gmail.com</div>
+              <div class="contact-label">Email</div>
+              <div class="contact-value">theo.lahmar1@gmail.com</div>
             </div>
             <div class="contact-arrow">→</div>
-            </a>
+          </a>
 
-            <a href="https://www.linkedin.com/in/théo-lahmar-bb0a25221" target="_blank" rel="noopener" class="contact-card contact-linkedin">
+          <a href="https://www.linkedin.com/in/théo-lahmar-bb0a25221" target="_blank" rel="noopener" class="contact-card contact-linkedin">
             <div class="contact-icon">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
                 <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z" />
                 <circle cx="4" cy="4" r="2" />
-                </svg>
+              </svg>
             </div>
             <div class="contact-info">
-                <div class="contact-label">LinkedIn</div>
-                <div class="contact-value">Théo LAHMAR</div>
+              <div class="contact-label">LinkedIn</div>
+              <div class="contact-value">Théo LAHMAR</div>
             </div>
             <div class="contact-arrow">→</div>
-            </a>
+          </a>
         </div>
-        </section>
+      </section>
     </div>
 
     <!-- FOOTER -->
@@ -351,7 +477,6 @@
         <p class="contact-line">
           <span class="green">$</span> echo "Feel free to reach out!"
         </p>
-        
         <p>crafted by <span class="green">{theo.brain.get()}</span> — 2026</p>
       </div>
     </footer>
