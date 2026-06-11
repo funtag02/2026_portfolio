@@ -29,10 +29,42 @@ function initCursor() {
   
     animRing();
   }
+
+  /**
+   * Mobile hamburger menu
+   */
+  function initHamburgerMenu() {
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.querySelector('.nav-links');
+    
+    if (!hamburger || !navLinks) return;
+    
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('active');
+      navLinks.classList.toggle('active');
+    });
+    
+    // Close menu when a link is clicked
+    navLinks.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        hamburger.classList.remove('active');
+        navLinks.classList.remove('active');
+      });
+    });
+    
+    // Close menu when clicking outside
+    document.addEventListener('click', (e) => {
+      if (!e.target.closest('nav')) {
+        hamburger.classList.remove('active');
+        navLinks.classList.remove('active');
+      }
+    });
+  }
   
   /**
    * Initialize app on DOM ready
    */
   document.addEventListener('DOMContentLoaded', () => {
     initCursor();
+    initHamburgerMenu();
   });

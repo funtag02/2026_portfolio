@@ -916,3 +916,404 @@
     color: var(--green);
     transform: translateX(4px);
   }
+
+  /* HAMBURGER MENU */
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 6px;
+    background: none;
+    border: none;
+    padding: 8px;
+  }
+
+  .hamburger span {
+    width: 24px;
+    height: 2px;
+    background: var(--green);
+    border-radius: 2px;
+    transition: all 0.3s ease;
+  }
+
+  .hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(10px, 10px);
+  }
+
+  .hamburger.active span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -7px);
+  }
+
+  /* RESPONSIVE MEDIA QUERIES */
+  
+  /* Tablets & Small Desktop */
+  @media (max-width: 768px) {
+    .container {
+      padding: 0 16px;
+    }
+
+    .nav-inner {
+      padding: 0 16px;
+    }
+
+    .nav-links {
+      gap: 16px;
+    }
+
+    .nav-links a {
+      font-size: 11px;
+    }
+
+    .hero {
+      padding: 100px 0 60px;
+    }
+
+    .hero-name {
+      font-size: clamp(28px, 5vw, 44px);
+    }
+
+    .hero-bio {
+      font-size: 13px;
+      max-width: 100%;
+      padding-left: 16px;
+    }
+
+    .cta-grid {
+      grid-template-columns: 1fr;
+      max-width: 100%;
+    }
+
+    .skills-grid {
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 10px;
+    }
+
+    section {
+      padding: 40px 0;
+    }
+
+    .section-header {
+      gap: 10px;
+      margin-bottom: 24px;
+    }
+
+    .section-title {
+      font-size: 18px;
+    }
+
+    .xp-header {
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .xp-period {
+      width: fit-content;
+    }
+
+    .about-block {
+      padding: 20px 24px;
+    }
+
+    .about-text {
+      font-size: 12px;
+    }
+
+    .about-loc {
+      flex-direction: column;
+      gap: 12px;
+      align-items: flex-start;
+    }
+
+    .contact-grid {
+      grid-template-columns: 1fr;
+    }
+
+    footer {
+      padding: 24px 0;
+    }
+  }
+
+  /* Mobile phones */
+  @media (max-width: 480px) {
+    .hamburger {
+      display: flex;
+    }
+
+    .nav-links {
+      display: none;
+    }
+
+    .nav-links.active {
+      display: flex;
+      position: absolute;
+      top: 52px;
+      left: 0;
+      right: 0;
+      flex-direction: column;
+      background: rgba(8, 11, 16, 0.95);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+      padding: 16px 0;
+      gap: 0;
+      list-style: none;
+      z-index: 99;
+    }
+
+    .nav-links.active li {
+      padding: 0;
+    }
+
+    .nav-links.active a {
+      display: block;
+      padding: 12px 24px;
+      font-size: 12px;
+      transition: background 0.2s;
+    }
+
+    .nav-links.active a:hover {
+      background: rgba(57, 211, 83, 0.08);
+    }
+
+    .container {
+      padding: 0 12px;
+    }
+
+    .nav-inner {
+      padding: 0 12px;
+    }
+
+    .hero {
+      padding: 80px 0 40px;
+    }
+
+    .hero-name {
+      font-size: clamp(24px, 6vw, 36px);
+      margin-bottom: 8px;
+    }
+
+    .hero-prompt {
+      font-size: 10px;
+    }
+
+    .hero-title {
+      font-size: 11px;
+      margin-bottom: 16px;
+    }
+
+    .hero-bio {
+      font-size: 12px;
+      line-height: 1.7;
+      max-width: 100%;
+      padding-left: 12px;
+      margin-bottom: 24px;
+      border-left: 2px solid var(--green2);
+    }
+
+    .status-badge {
+      font-size: 10px;
+      padding: 5px 10px;
+      margin-bottom: 20px;
+    }
+
+    .cta-grid {
+      gap: 10px;
+      max-width: 100%;
+      margin-bottom: 20px;
+    }
+
+    .cta-btn {
+      padding: 12px 16px;
+      font-size: 12px;
+      gap: 10px;
+    }
+
+    .cta-btn-icon {
+      width: 32px;
+      height: 32px;
+    }
+
+    .cta-label {
+      font-size: 9px;
+    }
+
+    .cta-name {
+      font-size: 12px;
+    }
+
+    section {
+      padding: 30px 0;
+    }
+
+    .section-header {
+      gap: 8px;
+      margin-bottom: 20px;
+      flex-wrap: wrap;
+    }
+
+    .section-kw {
+      font-size: 10px;
+    }
+
+    .section-title {
+      font-size: 16px;
+    }
+
+    .section-line {
+      display: none;
+    }
+
+    .skills-grid {
+      grid-template-columns: 1fr;
+      gap: 8px;
+    }
+
+    .skill-group {
+      padding: 12px 14px;
+    }
+
+    .skill-group-name {
+      font-size: 9px;
+      margin-bottom: 8px;
+    }
+
+    .skill-tags {
+      gap: 4px;
+    }
+
+    .tag {
+      font-size: 10px;
+      padding: 2px 6px;
+    }
+
+    .xp-card {
+      padding: 14px 16px;
+      border-radius: 0 4px 4px 0;
+    }
+
+    .xp-header {
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .xp-title {
+      font-size: 13px;
+    }
+
+    .xp-period {
+      font-size: 9px;
+      padding: 2px 6px;
+    }
+
+    .xp-org {
+      font-size: 10px;
+    }
+
+    .xp-desc {
+      font-size: 11px;
+    }
+
+    .xp-chips {
+      gap: 4px;
+      margin-top: 8px;
+    }
+
+    .xp-chip {
+      font-size: 9px;
+      padding: 2px 5px;
+    }
+
+    .about-block {
+      padding: 16px 20px;
+    }
+
+    .about-block::before {
+      font-size: 80px;
+      left: 10px;
+      top: -20px;
+    }
+
+    .about-text {
+      font-size: 11px;
+      line-height: 1.8;
+    }
+
+    .about-loc {
+      flex-direction: column;
+      gap: 8px;
+      align-items: flex-start;
+      padding-top: 12px;
+      font-size: 10px;
+    }
+
+    .contact-grid {
+      grid-template-columns: 1fr;
+      gap: 12px;
+    }
+
+    .contact-card {
+      padding: 16px;
+      gap: 12px;
+    }
+
+    .contact-icon {
+      width: 40px;
+      height: 40px;
+    }
+
+    .contact-label {
+      font-size: 9px;
+    }
+
+    .contact-value {
+      font-size: 12px;
+    }
+
+    .contact-arrow {
+      font-size: 16px;
+    }
+
+    footer {
+      padding: 20px 0;
+    }
+
+    footer p {
+      font-size: 10px;
+    }
+
+    /* Hide cursor effects on touch devices */
+    @media (hover: none) {
+      .cursor,
+      .cursor-ring {
+        display: none;
+      }
+    }
+  }
+
+  /* Ultra small phones */
+  @media (max-width: 360px) {
+    .hero-name {
+      font-size: clamp(20px, 5vw, 28px);
+    }
+
+    .cta-btn {
+      padding: 10px 12px;
+      font-size: 11px;
+    }
+
+    .section-title {
+      font-size: 14px;
+    }
+
+    .about-block {
+      padding: 12px 16px;
+    }
+
+    .contact-card {
+      padding: 12px;
+      gap: 8px;
+    }
+  }
